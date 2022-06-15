@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/assets/img/logo_iuricode.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/img/logo_iuricode.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter:wght@300&family=Saira:wght@100&family=Sora:wght@200&display=swap" rel="stylesheet">
@@ -25,17 +25,27 @@
             </div>
             <div class="form-class">
                 <h3>Preencha os campos para receber as notícias sobre programação</h3>
-                <form method="post" autocomplete="off">
+                <form method="post" autocomplete="off" name="form" onsubmit="return FormValidation()">
                     <label for="nameId">Nome</label>
-                    <input type="text" name="name" id="nameId" required>
+                    <input type="text" name="name" id="nameId">
 
                     <label for="emailId">Email</label>
                     <input type="email" name="email" id="emailId" required>
 
-                    <input type="button" value="Enviar">
+                    <input type="submit" value="Enviar">
                 </form>
             </div>
         </section>
+
+        <!-- <div class="boxConclued">
+            <h2>E-mail cadastrado com sucesso!</h2>
+            <input type="button" value="Fechar" class="close">
+        </div>
+        <div class="boxNotConclued">
+            <h2>E-mail não cadastrado!</h2>
+            <input type="button" value="Fechar" class="close">
+        </div> -->
+
     </main>
 
     <script src="./assets/js/main.js"></script>

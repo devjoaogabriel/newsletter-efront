@@ -180,7 +180,7 @@ input[type="email"] {
   padding: 0 10px;
 }
 
-form input[type="button"] {
+form input[type="submit"] {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -207,6 +207,8 @@ input {
   margin: 20px 0;
 }
 
+/* ALERTS  */
+
 /* PSEUDO-CLASS */
 
 #btn-class:hover {
@@ -219,11 +221,11 @@ input {
 
 input[type="email"]:hover,
 input[type="text"]:hover,
-input[type="button"]:hover {
+input[type="submit"]:hover {
     box-shadow: 0 0 20px 0 rgba(133, 133, 133, 0.116);
 }
 
-input[type="button"]:hover {
+input[type="submit"]:hover {
     cursor: pointer;
     background-color:transparent;
     border: 2px solid #04d361;
@@ -285,7 +287,7 @@ h2.logo-class:hover {
       font-size: 1.4rem;
       line-height: 1.8rem;
   }
-  form input[type="button"] {
+  form input[type="submit"] {
     height: 40px;
     font-size: 1.4rem;
     line-height: 1.9rem;
