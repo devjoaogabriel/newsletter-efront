@@ -6,7 +6,7 @@
 
 <img src="./assets/img/newsletter-efront.png"/>
 
-<h4 align="center"><a href="https://devjoaogabriel.github.io/OnePage/">Clique para visitar o projeto</a></h4>
+<h4 align="center"><a href="https://devjoaogabriel.github.io/newsletter-efront/">Clique para visitar o projeto</a></h4>
 
 ---
 
@@ -19,9 +19,9 @@ Utilizei apenas essas tecnologias com base em práticar meus conhecimentos:
 
 ---
 
-> #### Inspirado no Desafio 03 do Programador e UI Designer IURICODE!
+> #### Exercicio do eBook "eFront" do Programador e UI Designer IuriCode!
 >
-> - <a href="https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codelândia?node-id=624%3A2">Clique aqui</a> para acessar aos desafios no Figma.
-> - <a href="https://github.com/iuricode">Clique aqui</a> para acessar ao perfil do criador dos desafios no GitHub.
+> - <a href="https://hotmart.com/pt-br/marketplace/produtos/efront/L66686646K">Clique aqui</a> para acessar a pagina para comprar o eBook.
+> - <a href="https://github.com/iuricode">Clique aqui</a> para acessar ao perfil do criador no GitHub.
 >
 ---
