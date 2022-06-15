@@ -4,7 +4,7 @@
 
 ---
 
-<img src="./newsletter-efront"/>
+<img src="./assets/img/newsletter-efront.png"/>
 
 <h4 align="center"><a href="https://devjoaogabriel.github.io/OnePage/">Clique para visitar o projeto</a></h4>
 
