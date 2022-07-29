@@ -207,6 +207,11 @@ input {
   margin: 20px 0;
 }
 
+.hidden {
+  position: absolute; 
+  left: -5000px;
+}
+
 /* ALERTS  */
 
 /* PSEUDO-CLASS */
