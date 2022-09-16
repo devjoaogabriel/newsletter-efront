@@ -45,10 +45,7 @@ a {
   align-items: center;
 }
 .logo-class {
-  font-family: "Saira", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 4rem;
+  font: 500 normal 4rem "Saira", sans-serif;
   line-height: 63px;
   letter-spacing: -0.02em;
   color: #f9f9f9;
@@ -62,7 +59,7 @@ h2.logo-class::first-letter {
   color: transparent;
   font-weight: 700;
 }
-#btn-class {
+.btn-class {
   padding: 10px;
   width: 190px;
   height: 62px;
@@ -76,10 +73,7 @@ h2.logo-class::first-letter {
 
   /* TEXT  STYLE*/
 
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.4rem;
+  font: 400 normal 1.4rem 'DM Sans';
   line-height: 20px;
   text-transform: uppercase;
   color: #f9f9f9;
@@ -111,19 +105,13 @@ main {
   padding: 10px;
 }
 .text-center h1 {
-  font-family: "Sora";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 4.8rem;
+  font: 600 normal 4.8rem 'Sora';
   line-height: 6.0rem;
   text-align: center;
   color: #f9f9f9;
 }
 .text-center h2 {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 3.0rem;
+  font: 500 normal 3.0rem 'Inter';
   line-height: 3.9rem;
   text-align: center;
   color: #04d361;
@@ -135,10 +123,7 @@ main {
   align-items: center;
 }
 .form-class h3 {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 2.6rem;
+  font: 500 normal 2.6rem 'Inter';
   line-height: 3.6rem;
   color: #AEAEAE;
 }
@@ -152,10 +137,7 @@ form {
   margin-top: 20px;
 }
 label {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.8rem;
+  font: 500 normal 1.8rem 'Inter';
   line-height: 2.2rem;
   color: #aeaeae;
 }
@@ -171,10 +153,7 @@ input[type="email"] {
 
   /* PLACEHOLDER STYLE */
 
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.8rem;
+  font: 600 normal 1.8rem 'Inter';
   line-height: 2.2rem;
   color: #aeaeae;
   padding: 0 10px;
@@ -194,10 +173,7 @@ form input[type="submit"] {
 
   /* TEXT STYLE */
 
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 2rem;
+  font: 600 normal 2rem 'Inter';
   line-height: 2.9rem;
   text-align: center;
   color: #0c0c0c;
@@ -216,12 +192,11 @@ input {
 
 /* PSEUDO-CLASS */
 
-#btn-class:hover {
+.btn-class:hover {
   cursor: pointer;
   box-shadow: 0 0 20px 0 rgba(249, 249, 249, 0.219);
   background: #04d361;
   color: #080713;
-  font-weight: 600;
 }
 
 input[type="email"]:hover,
@@ -300,4 +275,97 @@ h2.logo-class:hover {
   input {
     margin: 10px 0;
   }
+}
+
+
+
+
+
+
+
+/* BUTTONS STYLES */
+
+/* Modal de conclusão e erro de cadastro  STYLE */
+
+
+/* .modal-sucess, .modal-error {
+  display: none;
+} */
+
+
+.modal-sucess, .modal-error {
+  margin: 0 auto;
+  width: 800px;
+  height: 300px;
+  background: #151515;
+  border: 1px solid #212529;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-sucess h2, .modal-error h2 {
+  font: 500 normal 28px 'Sora';
+  line-height: 40px;
+  text-align: center;
+  color: #F9F9F9;
+}
+
+.modal-sucess span {
+  color: #04D361;
+}
+.modal-error span {
+  color: #FF3E3E;
+}
+
+.modal-sucess input[type="button"] {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 45px;
+  background: #04D361;
+  border-radius: 4px;
+  transition: all ease-in-out 300ms;
+  cursor: pointer;
+}
+
+.modal-error input[type="button"] {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 45px;
+  background: #FF3E3E;
+  border-radius: 4px;
+  transition: all ease-in-out 300ms;
+  cursor: pointer;
+}
+
+.modal-sucess input[value="Fechar"] {
+  font: 600 normal 18px 'Inter';
+  line-height: 29px;
+  text-align: center;
+  color: #0C0C0C;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.modal-error input[value="Fechar"] {
+  font: 600 normal 18px 'Inter';
+  line-height: 29px;
+  text-align: center;
+  color: #0C0C0C;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.modal-sucess input:hover, .modal-error input:hover {
+  background: transparent;
+  color: #f9f9f9;
+  border: 2px solid #F9F9F9;
 }

@@ -1,56 +1,96 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/img/logo_iuricode.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter:wght@300&family=Saira:wght@100&family=Sora:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/reset.css">
+<html lang="pt-BR" class="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo_iuricode.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter:wght@300&family=Saira:wght@100&family=Sora:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/scrollreveal.css">
+
+    <!-- API -->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <title>eFront - Cadastro</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <header class="header">
-        <h2 class="logo-class">eFront</h2>
-        <a href="https://hotmart.com/pt-br/marketplace/produtos/efront/L66686646K" target="_blank" rel="noopener noreferrer" id="btn-class">Comprar eBook</a>
+      <h2 class="logo-class">eFront</h2>
+      <a
+        href="https://hotmart.com/pt-br/marketplace/produtos/efront/L66686646K"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-class"
+        >Comprar eBook</a
+      >
     </header>
     <main>
-        <section class="flex-container">
-            <div class="text-center">
-                <h1>Seja bem-vindo a sua melhor newsletter</h1>
-                <h2>Fique por dentro de todas a novidades</h2>
+      <section class="flex-container">
+        <div class="text-center">
+          <h1>Seja bem-vindo a sua melhor newsletter</h1>
+          <h2>Fique por dentro de todas a novidades</h2>
+        </div>
+        <div class="form-class">
+          <h3>Preencha os campos para receber as notícias sobre programação</h3>
+          <form
+            action="https://gmail.us9.list-manage.com/subscribe/post?u=84743222a1bb6fd5afb735e67&amp;id=21ed2e1fa9"
+            autocomplete="off"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            class="validate"
+            target="_blank"
+            novalidate
+          >
+            <label for="name" class="effect">Nome</label>
+            <input type="text" name="FNAME" id="name" class="effect" />
+
+            <label for="email" class="effect">Email</label>
+            <input type="email" name="EMAIL" id="email" class="effect" required />
+
+            <!-- real people should not fill this in and expect good things - do
+            not remove this or risk form bot signups
+            <div aria-hidden="true" class="hidden">
+              <input
+                type="text"
+                name="b_84743222a1bb6fd5afb735e67_21ed2e1fa9"
+                tabindex="-1"
+                value=""
+              />
             </div>
-            <div class="form-class">
-                <h3>Preencha os campos para receber as notícias sobre programação</h3>
-                <form action="https://gmail.us9.list-manage.com/subscribe/post?u=84743222a1bb6fd5afb735e67&amp;id=21ed2e1fa9" autocomplete="off" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                    <label for="name">Nome</label>
-                    <input type="text" name="FNAME" id="name">
+        -->
+            <input type="submit" value="Enviar" class="effect" />
+          </form>
+        </div>
+      </section>
+    </main>
 
-                    <label for="email">Email</label>
-                    <input type="email" name="EMAIL" id="email" required>
+    <!-- Modal de conclusão e erro de cadastro -->
 
-                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div aria-hidden="true" class="hidden">
-                        <input type="text" name="b_84743222a1bb6fd5afb735e67_21ed2e1fa9" tabindex="-1" value="">
-                    </div>
-                    <input type="submit" value="Enviar">
-                </form> 
-            </div>
-        </section>
-
-        <!-- <div class="boxConclued">
-            <h2>E-mail cadastrado com sucesso!</h2>
+    <!--
+        <div class="modal-sucess">
+            <h2>E-mail cadastrado com <span>sucesso</span>!</h2>
             <input type="button" value="Fechar" class="close">
         </div>
-        <div class="boxNotConclued">
-            <h2>E-mail não cadastrado!</h2>
+        <div class="modal-error">
+            <h2>E-mail <span>não</span> cadastrado!</h2>
             <input type="button" value="Fechar" class="close">
-        </div> -->
+        </div>
+    -->
 
-    </main>
     <script src="./assets/js/main.js"></script>
-</body>
+  </body>
 </html>
